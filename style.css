@@ -151,7 +151,9 @@ span{
 .hero-msg{
     background-color: white;
     color: black;
-    height: 40px;
+    height: 3rem;
+    width: 60%;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,12 +175,25 @@ span{
 }
 
 .box{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 300px;
     width: 22%;
     background-color: #fff;
     padding: 20px 0px 15px;
     margin-top: 15px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    overflow: hidden; 
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+    
+    transform: translateY(-8px) scale(1.015);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .box-img{
